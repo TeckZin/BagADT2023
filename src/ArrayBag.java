@@ -27,7 +27,7 @@ public class ArrayBag <T> implements BagInterface <T> {
     }
 
     @Override
-    public Object remove() {
+    public T remove() {
         return null;
     }
 
