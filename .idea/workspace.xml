@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f99bd32-f05d-47e1-bc30-5758ba7a2eaf" name="Changes" comment="" />
+    <list default="true" id="5f99bd32-f05d-47e1-bc30-5758ba7a2eaf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayBag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BagInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BagInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SetInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SetInterface.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695063172543</updated>
-      <workItem from="1695063173674" duration="319000" />
+      <workItem from="1695063173674" duration="1128000" />
     </task>
     <task id="LOCAL-00001" summary="Project Created">
       <created>1695063200395</created>
@@ -48,7 +64,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695063200395</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Files Added">
+      <created>1695063614102</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695063614102</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Files Added">
+      <created>1695063645446</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695063645446</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -56,6 +86,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Created" />
+    <MESSAGE value="Files Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Files Added" />
   </component>
 </project>
