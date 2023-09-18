@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5f99bd32-f05d-47e1-bc30-5758ba7a2eaf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayBag.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695063172543</updated>
-      <workItem from="1695063173674" duration="2365000" />
+      <workItem from="1695063173674" duration="3392000" />
     </task>
     <task id="LOCAL-00001" summary="Project Created">
       <created>1695063200395</created>
@@ -82,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695064344720</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Corrections">
+      <created>1695073579924</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695073579924</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +100,7 @@
     <MESSAGE value="Project Created" />
     <MESSAGE value="Files Added" />
     <MESSAGE value="Foundation set" />
-    <option name="LAST_COMMIT_MESSAGE" value="Foundation set" />
+    <MESSAGE value="Corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrections" />
   </component>
 </project>

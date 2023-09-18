@@ -1,34 +1,53 @@
+import java.awt.*;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class ArrayBag <T> implements BagInterface <T> {
-    private ArrayList<T> arrayBag;
+    private final ArrayList<T> arrayBag;
 
     public ArrayBag(){
+        System.out.println("\\u001B[34m Array Bag Created");
         this.arrayBag = new ArrayList<T>();
     }
     @Override
     public int getCurrentSize() {
-        return 3;
+        return arrayBag.size();
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return getCurrentSize() == 0;
     }
 
     @Override
-    public boolean add(Object newEntry) {
-        return false;
+    public boolean add(T newEntry) {
+
+        try {
+            arrayBag.add(newEntry);
+            return true;
+        } catch (Exception e) {
+            System.out.println("\\u001B[31m REMOVE FAIL");
+            return false;
+        }
+
+
     }
 
     @Override
-    public boolean remove(Object anEntry) {
+    public boolean remove(T anEntry) {
+        if(contains(anEntry)){
+            arrayBag.remove(anEntry);
+            return true;
+        }
+        System.out.println("\\u001B[31m ADD FAIL");
         return false;
     }
 
     @Override
     public T remove() {
-        return null;
+        Random rand = new Random();
+        int randInt = rand.nextInt(getCurrentSize());
+        return arrayBag.get(randInt);
     }
 
     @Override
@@ -37,8 +56,8 @@ public class ArrayBag <T> implements BagInterface <T> {
     }
 
     @Override
-    public boolean contains(Object anEntry) {
-        return false;
+    public boolean contains(T anEntry) {
+        return arrayBag.contains(anEntry);
     }
 
     @Override
@@ -47,7 +66,13 @@ public class ArrayBag <T> implements BagInterface <T> {
     }
 
     @Override
-    public int getFrequencyOf(Object anEntry) {
-        return 0;
+    public int getFrequencyOf(T anEntry) {
+        int count = 0;
+        for(T value: arrayBag){
+            if(anEntry == value){
+                count++;
+            }
+        }
+        return count;
     }
 }
