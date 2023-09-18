@@ -6,7 +6,7 @@ public class ArrayBag <T> implements BagInterface <T> {
     private final ArrayList<T> arrayBag;
 
     public ArrayBag(){
-        System.out.println("\\u001B[34m Array Bag Created");
+        System.out.println("\u001B[34mArray Bag Created");
         this.arrayBag = new ArrayList<T>();
     }
     @Override
@@ -26,7 +26,7 @@ public class ArrayBag <T> implements BagInterface <T> {
             arrayBag.add(newEntry);
             return true;
         } catch (Exception e) {
-            System.out.println("\\u001B[31m REMOVE FAIL");
+            System.out.println("\u001B[31m REMOVE FAIL");
             return false;
         }
 
@@ -39,7 +39,7 @@ public class ArrayBag <T> implements BagInterface <T> {
             arrayBag.remove(anEntry);
             return true;
         }
-        System.out.println("\\u001B[31m ADD FAIL");
+        System.out.println("\u001B[31m ADD FAIL");
         return false;
     }
 
