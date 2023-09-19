@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f99bd32-f05d-47e1-bc30-5758ba7a2eaf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayBag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695063172543</updated>
-      <workItem from="1695063173674" duration="9144000" />
+      <workItem from="1695063173674" duration="13133000" />
     </task>
     <task id="LOCAL-00001" summary="Project Created">
       <created>1695063200395</created>
@@ -126,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695087933703</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="shit works?">
+      <created>1695090146296</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695090146296</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +148,7 @@
     <MESSAGE value="ArrayBag completed" />
     <MESSAGE value="started on bagtesting" />
     <MESSAGE value="started on guessing game" />
-    <option name="LAST_COMMIT_MESSAGE" value="started on guessing game" />
+    <MESSAGE value="shit works?" />
+    <option name="LAST_COMMIT_MESSAGE" value="shit works?" />
   </component>
 </project>

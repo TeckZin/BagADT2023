@@ -1,16 +1,19 @@
+import java.lang.reflect.Array;
 import java.util.InputMismatchException;
+import java.util.Random;
 import java.util.Scanner;
 
+
 public class Game {
-    int amount = 4;
-    ArrayBag<Integer> guesses = new ArrayBag<>();
-    ArrayBag<Integer> arrayBag;
+    int amount;
+    private ArrayBag<Integer> guesses = new ArrayBag<>();
+    private Random rand = new Random();
+    private ArrayBag<Integer> arrayBag;
 
     private final Scanner sc = new Scanner(System.in);
 
-    public Game(ArrayBag<Integer> arrayBag){
+    public Game(){
         System.out.println("\033[1;33mGame Started");
-        this.arrayBag = arrayBag;
         Interaction();
 
 
@@ -33,14 +36,15 @@ public class Game {
         if(correctGuesses == amount){
             End();
         } else {
-            System.out.printf("%d of your guesses are correct\n", correctGuesses);
+            System.out.printf("%d of your guesses are incorrect\n", correctGuesses);
             Guess();
         }
     }
 
     private void Interaction(){
-//        System.out.print("\033[1;37mEnter amount to guess: ");
-//        this.amount = Input();
+        System.out.print("\033[1;37mEnter amount to guess: ");
+        this.amount = Input();
+        randomNumberListGen();
         System.out.printf("\033[0;97mEnter %d integers to guess:\n", amount);
         Guess();
 
@@ -50,28 +54,52 @@ public class Game {
 
     private int checkAllValue(){
         int count = 0;
-        for(int i = 0; i < guesses.getCurrentSize(); i++){
-            int frequency= 0;
-            int value = guesses.getValue(i);
+        ArrayBag<Integer> madeGuess = new ArrayBag<>();
+        for(int actualIdx = 0; actualIdx < amount; actualIdx++){
+            int actual = arrayBag.getValue(actualIdx);
 
-            if(arrayBag.getValue(i) == value){
-                int frequencyOfValue = guesses.getFrequencyOf(i);
-                for(int idx = 0 ; idx < guesses.getCurrentSize(); idx++){
-                    if(value == guesses.getValue(idx)) {
-                        frequency++;
+
+            for(int guessIdx = 0; guessIdx < amount; guessIdx++){
+                int guess = guesses.getValue(guessIdx);
+
+                System.out.printf("Actual: %d, Guess: %d\n", actual, guess);
+
+                if((actual == guess) && !madeGuess.contains(actual)){
+                    System.out.printf("Test 1: Pass\n", actual, guess);
+
+                    int guessFrequency= guesses.getFrequencyOf(guessIdx);
+                    int actualFrequency = arrayBag.getFrequencyOf(actualIdx);
+
+                    System.out.printf("ActualFre: %d, GuessFre %d\n", actualFrequency, guessFrequency);
+                    if(guessFrequency == actualFrequency){
+                        count += guessFrequency;
+                    } else if (actualFrequency > guessFrequency){
+                        count += amount - guessFrequency;
+                    } else if(guessFrequency > actualFrequency){
+                        count += amount - actualFrequency;
                     }
 
                 }
-                if(frequencyOfValue == frequency) {
-                    count += frequencyOfValue;
-                }
             }
+        }
+        return count;
+
+    }
 
 
 
+    private ArrayBag<Integer> randomNumberListGen(){
+        this.arrayBag = new ArrayBag<Integer>();
+        for(int i = 0; i < amount; i++){
+            arrayBag.add(randomNumberGen(rand));
         }
 
-        return count;
+        arrayBag.printArray();
+        return arrayBag;
+    }
+
+    private int randomNumberGen(Random rand){
+        return rand.nextInt(9);
 
     }
 

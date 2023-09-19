@@ -91,4 +91,11 @@ public class ArrayBag <T> implements BagInterface <T> {
         }
         return count;
     }
+
+    public void printArray(){
+        for(T x : arrayBag){
+            System.out.println(x);
+        }
+        return;
+    }
 }
