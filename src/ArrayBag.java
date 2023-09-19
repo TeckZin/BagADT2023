@@ -3,7 +3,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class ArrayBag <T> implements BagInterface <T> {
-    private final ArrayList<T> arrayBag;
+    private ArrayList<T> arrayBag;
+    private final  Random rand = new Random();
 
     public ArrayBag(){
         System.out.println("\u001B[34mArray Bag Created");
@@ -17,6 +18,11 @@ public class ArrayBag <T> implements BagInterface <T> {
     @Override
     public boolean isEmpty() {
         return getCurrentSize() == 0;
+    }
+
+    @Override
+    public T getValue(int index) {
+        return arrayBag.get(index);
     }
 
     @Override
@@ -45,14 +51,22 @@ public class ArrayBag <T> implements BagInterface <T> {
 
     @Override
     public T remove() {
-        Random rand = new Random();
-        int randInt = rand.nextInt(getCurrentSize());
-        return arrayBag.get(randInt);
+        try{
+            int randInt = rand.nextInt(getCurrentSize());
+            return arrayBag.get(randInt);
+        } catch (Exception e){
+            return null;
+        }
+
     }
+
+
 
     @Override
     public void clear() {
-
+        for(T value: arrayBag){
+            arrayBag.remove(value);
+        }
     }
 
     @Override
@@ -62,6 +76,8 @@ public class ArrayBag <T> implements BagInterface <T> {
 
     @Override
     public Object[] toArray() {
+
+
         return new Object[0];
     }
 

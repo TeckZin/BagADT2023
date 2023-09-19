@@ -1,6 +1,7 @@
 public interface BagInterface <T>{
     public int getCurrentSize();
     public boolean isEmpty();
+    public T getValue(int index);
     public boolean add(T newEntry);
     public boolean remove(T anEntry);
     public T remove();
