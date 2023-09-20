@@ -55,6 +55,7 @@ public class Game {
     private int checkAllValue(){
         int count = 0;
         ArrayBag<Integer> madeGuess = new ArrayBag<>();
+        guesses.printArray();
         for(int actualIdx = 0; actualIdx < amount; actualIdx++){
             int actual = arrayBag.getValue(actualIdx);
 
@@ -68,12 +69,11 @@ public class Game {
                     madeGuess.add(guess);
                     System.out.printf("Test 1: Pass\n", actual, guess);
 
-                    int guessFrequency= guesses.getFrequencyOf(guessIdx);
-                    int actualFrequency = arrayBag.getFrequencyOf(actualIdx);
-
-                    System.out.printf("ActualFre: %d, GuessFre %d\n", actualFrequency, guessFrequency);
+                    int guessFrequency = guesses.getFrequencyOf(guess);
+                    int actualFrequency = arrayBag.getFrequencyOf(actual);
+                    System.out.printf("ActualFre: %d, GuessFre: %d\n", actualFrequency, guessFrequency);
                     if(guessFrequency == actualFrequency){
-                        System.out.println("Added 1");
+                        System.out.printf("Same amount added %d\n", guessFrequency);
                         count += guessFrequency;
                     } else if (actualFrequency > guessFrequency){
                         System.out.printf("More number on acutal add %d\n", guessFrequency);
@@ -86,6 +86,7 @@ public class Game {
                 }
             }
         }
+        System.out.println(count);
         return count;
 
     }
