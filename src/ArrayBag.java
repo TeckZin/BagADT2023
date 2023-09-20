@@ -42,6 +42,7 @@ public class ArrayBag <T> implements BagInterface <T> {
     @Override
     public boolean remove(T anEntry) {
         if(contains(anEntry)){
+            System.out.println("Remove " + anEntry);
             arrayBag.remove(anEntry);
             return true;
         }
@@ -64,8 +65,10 @@ public class ArrayBag <T> implements BagInterface <T> {
 
     @Override
     public void clear() {
-        for(T value: arrayBag){
-            arrayBag.remove(value);
+        int size = arrayBag.size();
+        for(int i = 0; i < size; i++){
+            System.out.println( "removed: " + arrayBag.get(0));
+            arrayBag.remove(0);
         }
     }
 

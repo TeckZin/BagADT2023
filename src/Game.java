@@ -29,6 +29,7 @@ public class Game {
     }
 
     private void Guess(){
+        guesses.clear();
         for(int i = 0; i < amount; i++){
             guesses.add(Input());
         }

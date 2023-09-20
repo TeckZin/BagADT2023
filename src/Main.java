@@ -8,8 +8,6 @@ public class Main {
         System.out.println("\033[4;92mMAIN IS RUNNING");
         Random rand = new Random();
 
-//        BagTesting bT = new BagTesting();
-
 
         Game game = new Game();
 

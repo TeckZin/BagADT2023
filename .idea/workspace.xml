@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5f99bd32-f05d-47e1-bc30-5758ba7a2eaf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayBag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BagTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BagTesting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695063172543</updated>
-      <workItem from="1695063173674" duration="15937000" />
+      <workItem from="1695063173674" duration="16569000" />
     </task>
     <task id="LOCAL-00001" summary="Project Created">
       <created>1695063200395</created>
@@ -160,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695218779954</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix more bugs">
+      <created>1695219189594</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695219189594</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
