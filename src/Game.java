@@ -73,10 +73,13 @@ public class Game {
 
                     System.out.printf("ActualFre: %d, GuessFre %d\n", actualFrequency, guessFrequency);
                     if(guessFrequency == actualFrequency){
+                        System.out.println("Added 1");
                         count += guessFrequency;
                     } else if (actualFrequency > guessFrequency){
+                        System.out.printf("More number on acutal add %d\n", amount - actualFrequency);
                         count += amount - guessFrequency;
                     } else if(guessFrequency > actualFrequency){
+                        System.out.printf("Less number on acutal add %d\n", amount - guessFrequency);
                         count += amount - actualFrequency;
                     }
 
