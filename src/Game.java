@@ -65,6 +65,7 @@ public class Game {
                 System.out.printf("Actual: %d, Guess: %d\n", actual, guess);
 
                 if((actual == guess) && !madeGuess.contains(actual)){
+                    madeGuess.add(guess);
                     System.out.printf("Test 1: Pass\n", actual, guess);
 
                     int guessFrequency= guesses.getFrequencyOf(guessIdx);
