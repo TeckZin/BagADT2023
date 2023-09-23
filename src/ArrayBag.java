@@ -7,7 +7,7 @@ public class ArrayBag <T> implements BagInterface <T> {
     private final  Random rand = new Random();
 
     public ArrayBag(){
-        System.out.println("\u001B[34mArray Bag Created");
+        //System.out.println("\u001B[34mArray Bag Created");
         this.arrayBag = new ArrayList<T>();
     }
     @Override
@@ -67,7 +67,7 @@ public class ArrayBag <T> implements BagInterface <T> {
     public void clear() {
         int size = arrayBag.size();
         for(int i = 0; i < size; i++){
-            System.out.println( "removed: " + arrayBag.get(0));
+            //System.out.println( "removed: " + arrayBag.get(0));
             arrayBag.remove(0);
         }
     }
@@ -97,10 +97,10 @@ public class ArrayBag <T> implements BagInterface <T> {
 
 
 
-    public void printArray(){
+    /*public void printArray(){
         for(T x : arrayBag){
             System.out.println(x);
         }
         return;
-    }
+    }*/
 }

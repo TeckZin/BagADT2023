@@ -13,7 +13,7 @@ public class Game {
     private final Scanner sc = new Scanner(System.in);
 
     public Game(){
-        System.out.println("\033[1;33mGame Started");
+        System.out.println("\033[1;33mGame Started!");
         Interaction();
 
 
@@ -56,7 +56,7 @@ public class Game {
     private int checkAllValue(){
         int count = 0;
         ArrayBag<Integer> madeGuess = new ArrayBag<>();
-        guesses.printArray();
+        //guesses.printArray();
         for(int actualIdx = 0; actualIdx < amount; actualIdx++){
             int actual = arrayBag.getValue(actualIdx);
 
@@ -88,7 +88,7 @@ public class Game {
                 }
             }
         }
-        System.out.println(count);
+        //System.out.println(count);
         return count;
 
     }
