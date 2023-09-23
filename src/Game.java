@@ -37,7 +37,7 @@ public class Game {
         if(correctGuesses == amount){
             End();
         } else {
-            System.out.printf("%d of your guesses are incorrect\n", correctGuesses);
+            System.out.printf("%d of your guesses are correct\n", correctGuesses);
             Guess();
         }
     }
@@ -64,26 +64,27 @@ public class Game {
             for(int guessIdx = 0; guessIdx < amount; guessIdx++){
                 int guess = guesses.getValue(guessIdx);
 
-                System.out.printf("Actual: %d, Guess: %d\n", actual, guess);
+               // System.out.printf("Actual: %d, Guess: %d\n", actual, guess);
 
                 if((actual == guess) && !madeGuess.contains(actual)){
                     madeGuess.add(guess);
-                    System.out.printf("Test 1: Pass\n", actual, guess);
+                   // System.out.printf("Test 1: Pass\n", actual, guess);
 
                     int guessFrequency = guesses.getFrequencyOf(guess);
                     int actualFrequency = arrayBag.getFrequencyOf(actual);
-                    System.out.printf("ActualFre: %d, GuessFre: %d\n", actualFrequency, guessFrequency);
+                    //System.out.printf("ActualFre: %d, GuessFre: %d\n", actualFrequency, guessFrequency);
                     if(guessFrequency == actualFrequency){
-                        System.out.printf("Same amount added %d\n", guessFrequency);
+                        //System.out.printf("Same amount added %d\n", guessFrequency);
                         count += guessFrequency;
                     } else if (actualFrequency > guessFrequency){
-                        System.out.printf("More number on acutal add %d\n", guessFrequency);
+                        //System.out.printf("More number on acutal add %d\n", guessFrequency);
                         count += guessFrequency;
                     } else if(guessFrequency > actualFrequency){
-                        System.out.printf("Less number on acutal add %d\n", actualFrequency);
+                        //System.out.printf("Less number on acutal add %d\n", actualFrequency);
                         count += actualFrequency;
                     }
-
+                    
+                    
                 }
             }
         }
@@ -100,7 +101,7 @@ public class Game {
             arrayBag.add(randomNumberGen(rand));
         }
 
-        arrayBag.printArray();
+        //arrayBag.printArray();
         return arrayBag;
     }
 
@@ -110,7 +111,7 @@ public class Game {
     }
 
     private void End(){
-        System.out.println("GAME END");
+        System.out.println("GAME END!");
         return;
     }
 }
