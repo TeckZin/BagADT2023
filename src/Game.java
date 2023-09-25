@@ -3,6 +3,10 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
+/*
+ * @Author Teck Zin Tan, Ryan Noble, Jacky Chen
+ * 
+ */
 
 public class Game {
     int amount;

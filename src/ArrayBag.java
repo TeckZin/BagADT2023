@@ -2,6 +2,11 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
 
+/*
+ * @Author Teck Zin Tan, Ryan Noble, Jacky Chen
+ * 
+ */
+
 public class ArrayBag <T> implements BagInterface <T> {
     private ArrayList<T> arrayBag;
     private final  Random rand = new Random();
